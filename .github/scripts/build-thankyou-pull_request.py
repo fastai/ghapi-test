@@ -2,7 +2,7 @@ from fastcore.all import *
 from ghapi import *
 
 def reply_thanks():
-    api = GhApi(owner='fastai', repo='ghapi', token=github_token())
+    api = GhApi(owner='fastai', repo='ghapi-test', token=github_token())
     payload = context_github.event
     if 'workflow' in payload: issue = 1
     else:
